@@ -38,17 +38,17 @@ int main()
             zero_sec = "";
         std::cout<<zero_hr<<hr<<":"<<zero_mi<<mi<<":"<<zero_sec<<sec<<'\r';
         sec++;
-        if (sec==60)
+        if (sec>=60)
         {
             mi++;
             sec=0;
         }
-        if (mi==60)
+        if (mi>=60)
         {
             hr++;
             mi=0;
         }
-        if (hr==24)
+        if (hr>=24)
         {
             hr=0;
             mi=0;
