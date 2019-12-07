@@ -1,6 +1,8 @@
 #include <iostream>
 #include <unistd.h>
 #include <stdlib.h>
+#include <fstream>
+#include <Windows.h>
 int main()
 {
     int hr, mi, sec, input;
@@ -10,7 +12,7 @@ int main()
     std::string zero_hr = "";
     std::string zero_mi = "";
     std::string zero_sec = "";
-    std::cout<<"input 1 to start\n";
+    std::cout<<"input 1 to start retard fuck nigga\n";
     std::cin>>input;
     if (input==1)
     {
@@ -18,6 +20,10 @@ int main()
     }
     while (input==1)
     {
+		if(GetAsyncKeyState(VK_SPACE))
+		{
+			return 0;
+		}
         if (hr < 10)
         {
             zero_hr = "0";
